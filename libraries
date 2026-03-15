@@ -1,2 +1,0 @@
-import sys
-print( "your number is  ", sys.argv[1])
