@@ -7,5 +7,6 @@ Topics I am learning:
 - Conditions
 - Statistics
 - sys.argv
+- slice 
 
 I will keep updating this repository as I learn more Python.
