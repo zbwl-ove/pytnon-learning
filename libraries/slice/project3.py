@@ -1,4 +1,4 @@
-# password masker
+# password masker 
 import sys
 # checkeing some error
 if len(sys.argv)!= 2:
