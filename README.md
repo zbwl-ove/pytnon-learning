@@ -8,5 +8,7 @@ Topics I am learning:
 - Statistics
 - sys.argv
 - slice 
+- file I/O
+
 
 I will keep updating this repository as I learn more Python.
