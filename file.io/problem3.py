@@ -9,4 +9,4 @@ def main ():
     with open ("names.txt" , "w") as f :
         f.write  (f"{name1 }\n{name2}")
 if __name__=="__main__":
-    main ()      
+    main()
