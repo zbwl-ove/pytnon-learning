@@ -1,29 +1,31 @@
 import random
 
-# a rendom number provider function 
-
+# ENTER TO GAME 
+    
 def game ():
-    print( "your now playing this game ")
-    highe_scoer = random.randint(1, 100)
-    return highe_scoer
+    print("NOW YOUR PLAYING THIS GAME :" )
+    return random.randint( 1 , 100 )
+score = game ()
+print(  "your scoer is : ",  score)
 
-# read content of scoer.txt
+# READE FILE SAFFLI 
 
-with open ("ex.txt")as f :
-    content = f. read ()
+try:
+    with open ("ex.txt") as f :
+         content = f . read ()
+         if content == "":
+             content = 0
+         else :
+             content = int(content)
+        
+except FileNotFoundError:
+    content = 0
 
-# taking a highe_scoer
+# # GAME PLAY
+if score > content : 
+    with open ("ex.txt"  , "w") as f :
+        f . write (str(score ))
+        print( "your a herroo  :")
+else:
+    print( "you looose the game :")
 
-highe_scoer = game()  
-print( "your score is " , highe_scoer)   
-
-# a condition that cheake won or loose 
-if highe_scoer > int ( content ):
-    with open ( "ex.txt"  , "w") as f :
-        f . write (str(highe_scoer))
-    print( "your are hero ")
-elif highe_scoer == "":
-    content == 0
-    print( "your are hero ")    
-else : 
-    print( "you are not  a hero ")
