@@ -29,7 +29,7 @@ def status_show ():
     with open ("student.txt" , "r") as f :
         for line in f :
             name , marks , status = line .strip () . split(" , ")
-            if student . lower () in  name . lower():
+            if student . lower () ==  name . lower():
                 print  (f"{name} , {status}")
                 found = True
     
