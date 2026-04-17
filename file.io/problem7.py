@@ -1,3 +1,5 @@
+#  A SMALL SCHOOL SYSTEM 
+
 
 #____________ STUDENT ADD FUNCTION _________
 
