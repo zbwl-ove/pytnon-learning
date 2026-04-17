@@ -5,7 +5,7 @@ def get_argv (input_number):
     return sys.argv
 content = get_argv ( 2) 
 
-# ill work on this function leater!
+# ill work on this function leater! ( this is imp function )
 
  
 

@@ -7,11 +7,11 @@ def arg():
     return sys.argv[1].strip() , sys.argv[2].strip()
 
 # add in the main function
-# and how do i call this function i don't understand but it's work
+
 def main ():
     name1 , name2 = arg()
     with open ("names.txt" , "w") as f :
         f.write  (f"{name1 }\n{name2}")
-# making the unaivarsal use for other file
+# main functon call and refine for other file 
 if __name__=="__main__":
     main()

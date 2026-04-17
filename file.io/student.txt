@@ -1,0 +1,3 @@
+love , 56 , fail  
+maya  , 99 , GRADE A+ 
+shakti  , 66 , GRADE B  
