@@ -9,6 +9,6 @@ Topics I am learning:
 - sys.argv
 - slice 
 - file I/O
-
+- object orinted programming 
 
 I will keep updating this repository as I learn more Python.
