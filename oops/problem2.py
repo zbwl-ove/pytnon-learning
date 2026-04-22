@@ -27,9 +27,14 @@ class bankaccount :
             amount = int ( input ( "enter the deposit amount  : "))
         except Exception as e :
             print ( "erorr happend " , e)
-        with open ( "costmer.txt" , "r") as f : 
-            content = f . read ()
-            if content 
+        try:
+            with open ( "costmer.txt" , "r") as f : 
+                for line in f :
+                    name , balance  = line.split() 
+                    print ( name , balance)
+                    return
+        except Exception as e :
+            print ("erorr happend " , e)
 
 # ------------ file write function ----------------
 def write_file(filename , mode , name= None , balance= None ): # remember this order 
@@ -61,3 +66,6 @@ def write_file(filename , mode , name= None , balance= None ): # remember this o
 #         print ( "erorr happend "  , e)    
 # name = "rajesh"
 # data = file("student.txt" , "w"  , name )
+now= bankaccount
+now.deposit ()
+#  OK I CAN CREATE BETTER VERSONE OF THIS SO ILL CREATE ONTER ONE 
