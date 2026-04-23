@@ -9,15 +9,15 @@ class Account :
 # ==============credit system ====================
 
     def credit (self , amount ):
-        # amount += self.balance i write this ulta 
+        
         self.balance += amount
        
-        print (f"balance left{self.show_balance}")
+        return self.balance
 
     # ==============balance system================
     
     def  show_balance (self):
-        print ( f"\n{self.balance}" , "is your balance")
+        print (self.balance , "balance")
 
 # ============debit system ===================\
     def debit (self,  amount ):
@@ -26,8 +26,7 @@ class Account :
             print ( " insufficent balance : ")  
         else:
             self.balance-= amount
-            print ("you trust me  !")
-            print (f"\n {self.show_balance}" , "your balance " )
+            return self.balance
 
 # 22222222222222222222222 main 222222222222222222222222222
 
@@ -44,9 +43,7 @@ while True:
 
     choice = int (input ("no !"))
     if choice == 1 :
-        love.show_balance()
-
-        print(love.show_balance)
+        print ( love.balance)
 
     # =========================debit=====================
 
