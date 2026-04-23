@@ -28,7 +28,7 @@ class Account :
             self.balance-= amount
             return self.balance
 
-# 22222222222222222222222 main 222222222222222222222222222
+#-----------------------main -------------------
 
 name = input ("your name !")
 love = Account(name)
@@ -76,3 +76,4 @@ while True:
         break
     else :
         print (f"thanks{name}")
+#  ill solve this problem in futuer with in 5 min !
