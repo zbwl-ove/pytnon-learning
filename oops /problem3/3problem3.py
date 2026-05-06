@@ -1,0 +1,79 @@
+# A banking system 
+# a class
+class Account :
+    
+    def __init__(self , name , balance = 0):
+        self.name = name
+        self.balance = balance
+
+# ==============credit system ====================
+
+    def credit (self , amount ):
+        
+        self.balance += amount
+       
+        return self.balance
+
+    # ==============balance system================
+    
+    def  show_balance (self):
+        print (self.balance , "balance")
+
+# ============debit system ===================\
+    def debit (self,  amount ):
+        int(amount)
+        if amount > self.balance:
+            print ( " insufficent balance : ")  
+        else:
+            self.balance-= amount
+            return self.balance
+
+#-----------------------main -------------------
+
+name = input ("your name !")
+love = Account(name)
+    # ----------------- menu--------------
+while True:
+    print ( '''
+        1 for balance
+        2 for withdrowel
+        3 for depsit
+        ''')
+    # -------------------balence -------------------
+
+    choice = int (input ("no !"))
+    if choice == 1 :
+        print ( love.balance)
+
+    # =========================debit=====================
+
+    elif choice == 2 : 
+        print ("redy for withdrowl ; ")
+        while True:
+            try:
+                cash = int (input ("enter hear amount"))
+                break
+            except ValueError : 
+                print ("ops number only ! ")
+        love.debit(cash)
+        print ("withdrowl sucssesfully :" , cash , "repees ; ")
+        print (love.show_balance)
+
+        # ===============credt=======================
+
+    elif choice == 3:
+        while True:
+            try:
+                cash = int (input ("enter hear amount"))
+                break
+            except ValueError : 
+                print ("ops number only ! ")
+            love.credit(cash) 
+            print (f"hogeya : {cash} itne add  " )
+            print ( love.show_balance)
+    op = input ("press enter to continu or press exit ")
+    if op == "exit":
+        break
+    else :
+        print (f"thanks{name}")
+#  ill solve this problem in futuer with in 5 min !
