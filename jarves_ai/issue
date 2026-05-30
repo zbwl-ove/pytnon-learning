@@ -1,0 +1,8 @@
+Problem:
+Speech recognition mic input detect nahi kar raha Fedora me.
+
+Things tried:
+- microphone test
+- pyaudio
+- speech_recognition library
+- permissions
